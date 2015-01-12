@@ -9,6 +9,11 @@ $("document").ready(function(){
     $(".practice").css("background-color", "purple");
     $('p:last').css({"background-color":"red", "color": "white"});  
    
+   
+    $('oneButton').bind('click', alertButtonClick);
+    
+    $('logo').bind('mouseover', mouseOverme).bind('mouseout', mouseOutMe);
+        
 });
 
 
