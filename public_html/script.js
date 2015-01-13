@@ -13,7 +13,22 @@ $("document").ready(function(){
     $('oneButton').bind('click', alertButtonClick);
     
     $('logo').bind('mouseover', mouseOverme).bind('mouseout', mouseOutMe);
-        
+    
+    $('#repLaceWTetxt').bind('click', repLaceWText);
+    
+    $('#addAPara').bind('click', addAPara);
+    
+    $('#removeAPara').bind('click', removeAPara);
 });
 
+function removeAPara(){
+    $('#randPara p1Last').remove();
+}
 
+function addAPara(){
+    $('randPara').append('p2ADDED/p2');
+}
+
+function replaceWText(){
+    $('#replaceWText').text('Replace');
+}
