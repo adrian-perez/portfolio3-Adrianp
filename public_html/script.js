@@ -24,6 +24,8 @@ $("document").ready(function(){
 $('#replaceWText').bind('click', replaceWText);
 
 $('#superHumane').accordion({header: "h3"});
+
+$("#content").load("b.php #abc");
 });
 
 function removeAPara(){
